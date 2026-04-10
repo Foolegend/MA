@@ -53,7 +53,7 @@ available_functions = {
 }
 
 response: ChatResponse = chat(
-  'qwen3:4b',
+  'llama3.1',
   messages=messages,
   tools=[add_two_numbers, subtract_two_numbers_tool],
 )
@@ -77,7 +77,7 @@ if response.message.tool_calls:
   messages.append({'role': 'tool', 'content': str(output), 'tool_name': tool.function.name})
 
   # Get final response from model with function outputs
-  final_response = chat('qwen3:4b', messages=messages)
+  final_response = chat('llama3.1', messages=messages)
   print('Final response:', final_response.message.content)
 
 else:

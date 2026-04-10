@@ -12,7 +12,7 @@ async def main():
   ]
 
   client = AsyncClient()
-  response = await client.chat('qwen3.5:0.8b', messages=messages)
+  response = await client.chat('gemma3', messages=messages)
   print(response['message']['content'])
 
 
