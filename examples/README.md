@@ -71,7 +71,7 @@ Configuration to use with an MCP client:
 }
 ```
 
-- [web-search-mcp.py](web-search-mcp.py)
+- [web-search-mcp.py](../mcpServer/mcpServerExample.py)
 
 ### Multimodal with Images - Chat with a multimodal (image chat) model
 
