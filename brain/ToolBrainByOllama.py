@@ -1,5 +1,5 @@
 from typing import Iterator
-from ollama import ChatResponse, Client,chat
+from ollama import ChatResponse, Client, chat
 
 
 def call_multi_tools(model='qwen3-coder:480b-cloud', stream=True, available_functions={}, messages=[],think=True):

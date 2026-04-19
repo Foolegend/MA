@@ -4,7 +4,7 @@ from typing import Iterator
 from ollama import ChatResponse, Client
 
 
-def get_temperature(city: str) -> int:
+def get_temperature(city: str) -> str:
   """
   Get the temperature for a city in Celsius
 
@@ -12,7 +12,7 @@ def get_temperature(city: str) -> int:
     city (str): The name of the city
 
   Returns:
-    int: The current temperature in Celsius
+    str: The current temperature in Celsius
   """
   # This is a mock implementation - would need to use a real weather API
   import random

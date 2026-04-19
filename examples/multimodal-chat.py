@@ -11,7 +11,7 @@ path = input('Please enter the path to the image: ')
 # img = Path(path).read_bytes()
 
 response = chat(
-  model='gemma3',
+  model='qwen3-coder:480b-cloud',
   messages=[
     {
       'role': 'user',

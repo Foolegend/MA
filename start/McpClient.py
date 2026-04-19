@@ -26,7 +26,8 @@ async def main():
             tools = await session.list_tools()
             print("\n📋 可用工具：")
             for tool in tools.tools:
-                print(f"- {tool.name}：{tool.description}")
+                # print(f"- {tool.name}：{tool.description}")
+                print(tool)
 
             # ======================
             # 5. 调用工具（改成你自己的工具名 + 参数）
